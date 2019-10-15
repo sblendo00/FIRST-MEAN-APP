@@ -1,4 +1,3 @@
-
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http'; //HTTP CLIENT
 @Component({
@@ -14,7 +13,7 @@ export class AppComponent implements OnInit{
 
     ngOnInit(): void {
       // Make the HTTP request:
-      this.http.get('').subscribe(data => {
+      this.http.get('https://3000-aa3475e7-9d9e-457e-ba90-2575ccebc6e0.ws-eu0.gitpod.io/api').subscribe(data => {
         // Read the result field from the JSON response.
         this.results = data['results'];
       });
